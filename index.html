@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        overflow: hidden;
+    }
+    #block {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+    }
+
+    canvas {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    .n {
+        width: 200px;
+        height: 10px;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 200px;
+        transform-origin: center left;
+    }
+
+    .n1 {
+        top: 400px;
+    }
+    .n2 {
+        top: 600px;
+    }
+    .n3 {
+        top: 800px;
+    }
+
+    .nav {
+        position: fixed;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        list-style: none;
+        background-color: #fff;
+        border-radius: 999px;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav li {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #e4e4e4;
+    }
+
+
+</style>
+<body>
+    <main>
+
+        <!-- <div id="wrap">
+            <div class="n">
+                <img src="img/img01.jpg" width="60" height="90" alt="">
+            </div>
+            <div class="n n1">
+                <img src="img/img02.jpg" width="60" height="90" alt="">
+            </div>
+            <div class="n n2">
+                <img src="img/img03.jpg" width="60" height="90" alt="">
+            </div>
+            <div class="n n3">
+                <img src="img/img04.jpg" width="60" height="90" alt="">
+            </div>
+        </div> -->
+        <ul class="nav">
+            <li data-nav="1"></li>
+            <li data-nav="2"></li>
+            <li data-nav="3"></li>
+            <li data-nav="4"></li>
+        </ul>
+    </main>
+    <script src="./dist/bundle.js" type="module"></script>
+</body>
+</html>
